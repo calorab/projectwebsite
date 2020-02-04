@@ -16,6 +16,22 @@ p, .edu-list li, .comments h5 {
     color: rgb(23, 39, 54);
 }
 
+button {
+    background-color: rgb(23, 39, 54);
+    color: snow;
+    border: none;
+    font: inherit;
+    padding: 7px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: snow;
+    color: rgb(23, 39, 54);
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgb(23, 39, 54)
+}
 
 .nav-list {
     background-color: snow;
@@ -25,6 +41,11 @@ p, .edu-list li, .comments h5 {
     margin-top: 0px;
     align-items: center;
     justify-content: space-around;
+}
+
+.nav-list a:hover {
+    border-bottom: 2px solid rgb(23, 39, 54);
+    cursor: pointer;
 }
 
 .nav-list li {
