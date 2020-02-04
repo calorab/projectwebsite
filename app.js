@@ -32,7 +32,7 @@ $('.see-bio').click(event => {
 });
 
 navArray = () => {
-    var nav = ["Bio + Education", "Projects", "My Story"];
+    var nav = ["Bio + Education", "Projects", "My Story", "Github", "LinkedIn"];
     nav.forEach((element) => {
       var navElement = $("<li><a id='" + nav.indexOf(element) +
         "' class='nav-link'>" + element + "</a></li>");
@@ -48,6 +48,10 @@ navRouter = (element) => {
       initialDisplay();
     } else if (element.text() === "Projects") {
         projectsDisplay();
+    } else if (element.text() === "Github") {
+        alert('set up github link!');
+    } else if (element.text() === "LinkedIn") {
+        alert('set up LinkedIn link!');
     } else {
         myStoryDisplay();
     }
