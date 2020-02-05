@@ -1,19 +1,19 @@
 initialDisplay = () => {
     $('.mystory').hide();
     $('.projects').hide();
-    $('.bio').show();
+    $('.bio').fadeIn(600);
 };
 
 myStoryDisplay = () => {
     $('.bio').hide();
     $('.projects').hide();
-    $('.mystory').show();
+    $('.mystory').fadeIn(600);
 };
 
 projectsDisplay = () => {
     $('.bio').hide();
     $('.mystory').hide();
-    $('.projects').show();
+    $('.projects').fadeIn(600);
 };
 
 $('.see-projects').click(event => {
@@ -42,16 +42,17 @@ navArray = () => {
       });
     });
 }
-  
+
+// May need to switch back to location.replace(...) below
 navRouter = (element) => {
     if (element.text() === "Bio + Education") {
       initialDisplay();
     } else if (element.text() === "Projects") {
         projectsDisplay();
     } else if (element.text() === "Github") {
-        alert('set up github link!');
+        window.location.assign('https://github.com/calorab');
     } else if (element.text() === "LinkedIn") {
-        alert('set up LinkedIn link!');
+        window.location.assign('https://www.linkedin.com/in/caleb-gammon-18153040');
     } else {
         myStoryDisplay();
     }
