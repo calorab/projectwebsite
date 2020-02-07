@@ -40,7 +40,9 @@ button:hover {
     display: flex;
     margin-top: 0px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0px;
 }
 
 .nav-list a:hover {
@@ -52,7 +54,7 @@ button:hover {
     color: rgb(38, 32, 78);
     display: flex;
     justify-content: center;
-    align-self: flex-end;
+    align-items: center;
     padding-left: 25px; 
     padding-right: 25px;
 }
@@ -93,4 +95,32 @@ footer {
     text-align: center;
     height: 50px;
     margin-top: 40px;
+}
+
+footer p {
+    color: rgb(190, 178, 178);
+}
+
+@media screen and (max-width: 815px) {
+    .container {
+        width: 80%;
+    }
+
+    .project {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .screenshot {
+        align-content: center;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-list li {
+        padding-left: 10px; 
+        padding-right: 10px;    
+    }
 }
