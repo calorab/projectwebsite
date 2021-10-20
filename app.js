@@ -17,22 +17,19 @@ projectsDisplay = () => {
 };
 
 $('.see-projects').click(event => {
-    console.log('display projects...');
     projectsDisplay();
 });
 
 $('.see-mystory').click(event => {
-    console.log('display my story...');
     myStoryDisplay();
 });
 
 $('.see-bio').click(event => {
-    console.log('display bio...');
     initialDisplay();
 });
 
 navArray = () => {
-    var nav = ["Bio + Education", "Projects", "My Story", "Github", "LinkedIn"];
+    var nav = ["Bio + Education", "Projects", "Github", "LinkedIn"];
     nav.forEach((element) => {
       var navElement = $("<li><a id='" + nav.indexOf(element) +
         "' class='nav-link'>" + element + "</a></li>");
@@ -59,6 +56,6 @@ navRouter = (element) => {
 }
 
 $(() => {
-    initialDisplay();
+    projectsDisplay();
     navArray();
 });
