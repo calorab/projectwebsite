@@ -58,9 +58,6 @@ navRouter = (element) => {
     }
 }
 
-
-
-
 $(() => {
     initialDisplay();
     navArray();
