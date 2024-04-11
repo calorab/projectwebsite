@@ -31,25 +31,25 @@ $('.see-bio').click(event => {
 navArray = () => {
     var nav = ["Bio + Education", "Projects", "Github", "LinkedIn"];
     nav.forEach((element) => {
-      var navElement = $("<li><a id='" + nav.indexOf(element) +
-        "' class='nav-link'>" + element + "</a></li>");
-      $('.nav-list').append(navElement);
-      navElement.click(() => {
-        navRouter(navElement);
-      });
+        var navElement = $("<li><a id='" + nav.indexOf(element) +
+            "' class='nav-link'>" + element + "</a></li>");
+        $('.nav-list').append(navElement);
+        navElement.click(() => {
+            navRouter(navElement);
+        });
     });
 }
 
 // May need to switch back to location.replace(...) below
 navRouter = (element) => {
     if (element.text() === "Bio + Education") {
-      initialDisplay();
+        initialDisplay();
     } else if (element.text() === "Projects") {
         projectsDisplay();
     } else if (element.text() === "Github") {
         window.location.assign('https://github.com/calorab');
     } else if (element.text() === "LinkedIn") {
-        window.location.assign('https://www.linkedin.com/in/caleb-gammon-18153040');
+        window.location.assign('www.linkedin.com/in/caleb-gammon-developer-extraordinaire');
     } else {
         myStoryDisplay();
     }
