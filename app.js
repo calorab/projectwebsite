@@ -49,7 +49,7 @@ navRouter = (element) => {
     } else if (element.text() === "Github") {
         window.location.assign('https://github.com/calorab');
     } else if (element.text() === "LinkedIn") {
-        window.location.assign('www.linkedin.com/in/caleb-gammon-developer-extraordinaire');
+        window.location.assign('https://www.linkedin.com/in/caleb-gammon-developer-extraordinaire');
     } else {
         myStoryDisplay();
     }
