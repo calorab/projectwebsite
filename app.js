@@ -49,11 +49,11 @@ navRouter = (element) => {
     } else if (element.text() === "What I'm Doing") {
         myStoryDisplay();
     } else if (element.text() === "Github") {
-        window.location.assign('https://github.com/calorab');
+        window.open('https://github.com/calorab', '_blank');
     } else if (element.text() === "LinkedIn") {
-        window.location.assign('https://www.linkedin.com/in/caleb-gammon-technologist');
+        window.open('https://www.linkedin.com/in/caleb-gammon-technologist', '_blank');
     } else if (element.text() === "Tech Meets Human") {
-        window.location.assign('https://medium.com/tech-meets-human');
+        window.open('https://medium.com/tech-meets-human', '_blank');
     } else {
         myStoryDisplay();
     }
